@@ -1,8 +1,6 @@
 package com.daffidev.soapi.Model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 import java.util.Date;
 
@@ -10,6 +8,7 @@ import java.util.Date;
 public class Repartidores {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private char nombre;
     private char telefono;
